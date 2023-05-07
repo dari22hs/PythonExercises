@@ -76,19 +76,93 @@ Here are some simple exercises to practice with Python.
 #** 7) Write a Python program that accepts a string and calculate the number of digits and letters in it.
 
 
-def count_digits_letters(myString):
-    digits = 0
-    letters = 0
-    for char in myString:
-        if char.isdigit():
-            digits += 1
-        elif char.isalpha():
-            letters += 1
+# def count_digits_letters(myString):
+#     digits = 0
+#     letters = 0
+#     for char in myString:
+#         if char.isdigit():
+#             digits += 1
+#         elif char.isalpha():
+#             letters += 1
     
-    return digits, letters
+#     return digits, letters
 
 
-myString = input("Enter your string: >> ")
-digits, letters = count_digits_letters(myString)
-print(f"Number of digits: {digits}\nNumber of letters: {letters}")
+# myString = input("Enter a string: >> ")
+# digits, letters = count_digits_letters(myString)
+# print(f"Number of digits: {digits}\nNumber of letters: {letters}")
+
+#** 8) Write a Python function to reverse a string.
+
+
+# def reverse_string(myString):
+#     return myString[::-1]
+
+
+# myString = input("Enter a string: >> ")
+# print(f"String reversed: {reverse_string(myString)}")
+    
+#** 9) Write a Python program that accepts a sentence and calculates the number of uppercase letters and lowercase letters.
+
+
+# def count_upper_lower(myString):
+#     upper = 0
+#     lower = 0
+#     for char in myString:
+#         if char.isupper():
+#             upper += 1
+#         elif char.islower():
+#             lower += 1
+#     return upper, lower
+
+
+# myString = input("Enter a string: >> ")
+# upper, lower = count_upper_lower(myString)
+# print(f"Number of uppercase letters: {upper}\nNumber of lowercase letters: {lower}")
+
+#** 10) Write a Python program that accepts a string and returns the number of times each word appears in the string
+
+
+# def count_words(myString):
+#     word_list = myString.split()
+#     word_freq = {}
+#     for word in word_list:
+#         if word in word_freq:
+#             word_freq[word] += 1
+#         else:
+#             word_freq[word] = 1
+#     return word_freq
+
+
+# myString = input("Enter a string: >> ")
+# word_freq = count_words(myString)
+# for word, freq in word_freq.items():
+#     print(f"{word}: {freq}")
+
+#** 11) Write a Python program to find the factorial of a given number.
+
+
+# def find_factorial(number):
+#     if number == 0:
+#         return 1
+#     else:
+#         return number * find_factorial(number - 1)
+    
+
+# number = int(input("Enter a number: >> "))
+# print(f"The factorial number of {number} is {find_factorial(number)}")
+
+#** 12) Write a Python program to find the sum of the digits of a given number.
+
+
+def sum_digits(number):
+    sum = 0
+    for digit in str(number):
+        sum += int(digit)
+    return sum
+
+
+number = int(input("Enter a number: >> "))
+print(f"The sum of the digits of {number} is: {sum_digits(number)}")
+
 
