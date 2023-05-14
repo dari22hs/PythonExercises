@@ -250,19 +250,39 @@ Here are some simple exercises to practice with Python.
 #** 18) Write a Python program to find the sum of all prime numbers between 1 and n (where n is provided by the user)
 
 
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
 
 
-n = int(input("Enter a number: >> "))
-sum_primes = 0
-for i in range(2, n+1):
-    if is_prime(i):
-        sum_primes += i
+# n = int(input("Enter a number: >> "))
+# sum_primes = 0
+# for i in range(2, n+1):
+#     if is_prime(i):
+#         sum_primes += i
         
-print(f"The sum of all primes between 1 and {n} is: {sum_primes}")
+# print(f"The sum of all primes between 1 and {n} is: {sum_primes}")
+
+#** 19) Write a Python program to find the length of the longest consecutive sequence of a given list of integers.
+
+
+def find_longest_consecutive_seq(myList):
+    myList.sort()
+    longest_seq = 0
+    current_seq = 0
+    for i in range(1, len(myList)):
+        if myList[i] == myList[i-1] + 1:
+            current_seq += 1
+        else:
+            longest_seq = max(longest_seq, current_seq)
+            current_seq = 1
+    longest_seq = max(longest_seq, current_seq)
+    return longest_seq
+
+
+myList = [1, 2, 3, 4, 9, 10, 18, 19, 20, 21, 22, 23, 39, 40]
+print(f"{find_longest_consecutive_seq(myList)}")
