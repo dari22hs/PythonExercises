@@ -270,19 +270,66 @@ Here are some simple exercises to practice with Python.
 #** 19) Write a Python program to find the length of the longest consecutive sequence of a given list of integers.
 
 
-def find_longest_consecutive_seq(myList):
+# def find_longest_consecutive_seq(myList):
+#     myList.sort()
+#     longest_seq = 0 
+#     current_seq = 0
+#     for i in range(1, len(myList)):
+#         if myList[i] == myList[i-1] + 1:
+#             current_seq += 1
+#         else:
+#             longest_seq = max(longest_seq, current_seq)
+#             current_seq = 1
+#     longest_seq = max(longest_seq, current_seq)
+#     return longest_seq
+
+
+# myList = [1, 2, 3, 4, 9, 10, 18, 19, 20, 21, 22, 23, 39, 40]
+# print(f"{find_longest_consecutive_seq(myList)}")
+
+#** 20) Write a Python program to find the first non-repeating character in a given string.
+
+
+# def find_first_non_repeating_char(myString):
+#     char_count = {}
+#     for char in myString:
+#         if char in char_count:
+#             char_count[char] += 1
+#         else:
+#             char_count[char] = 1
+#     for char in myString:
+#         if char_count[char] == 1:
+#             return char
+#     return None
+
+
+# myString = input("Enter a string: >> ")
+# result = find_first_non_repeating_char(myString)
+# if result:
+#     print(f"The first non-repeating character is: {result}")
+# else:
+#     print("No non-repeating character in the string.")
+
+#** 21) Write a Python program to find the median of a given list of integers.
+
+
+def find_median(myList):
+    print(f"Original list: {myList}\n")
     myList.sort()
-    longest_seq = 0
-    current_seq = 0
-    for i in range(1, len(myList)):
-        if myList[i] == myList[i-1] + 1:
-            current_seq += 1
-        else:
-            longest_seq = max(longest_seq, current_seq)
-            current_seq = 1
-    longest_seq = max(longest_seq, current_seq)
-    return longest_seq
+    print(f"Ordered list: {myList}\n")
+    
+    length = len(myList)
+    
+    if length % 2 == 0:
+        half1 = length // 2
+        half2 = half1 - 1
+        median = (myList[half1] + myList[half2]) / 2
+    else:
+        half = length // 2
+        median = myList[half]
+        
+    return median
 
 
-myList = [1, 2, 3, 4, 9, 10, 18, 19, 20, 21, 22, 23, 39, 40]
-print(f"{find_longest_consecutive_seq(myList)}")
+myList = [9, 1, 8, 1, 3, 4, 6, 2, 3, 7, 7, 5, 0, 6, 1]
+print(f"The median is: {find_median(myList)}\n")
