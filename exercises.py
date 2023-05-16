@@ -313,23 +313,76 @@ Here are some simple exercises to practice with Python.
 #** 21) Write a Python program to find the median of a given list of integers.
 
 
-def find_median(myList):
-    print(f"Original list: {myList}\n")
-    myList.sort()
-    print(f"Ordered list: {myList}\n")
+# def find_median(myList):
+#     print(f"Original list: {myList}\n")
+#     myList.sort()
+#     print(f"Ordered list: {myList}\n")
     
-    length = len(myList)
+#     length = len(myList)
     
-    if length % 2 == 0:
-        half1 = length // 2
-        half2 = half1 - 1
-        median = (myList[half1] + myList[half2]) / 2
-    else:
-        half = length // 2
-        median = myList[half]
+#     if length % 2 == 0:
+#         half1 = length // 2
+#         half2 = half1 - 1
+#         median = (myList[half1] + myList[half2]) / 2
+#     else:
+#         half = length // 2
+#         median = myList[half]
         
-    return median
+#     return median
 
 
-myList = [9, 1, 8, 1, 3, 4, 6, 2, 3, 7, 7, 5, 0, 6, 1]
-print(f"The median is: {find_median(myList)}\n")
+# myList = [9, 5, 2, 8, 1]
+# print(f"The median is: {find_median(myList)}\n")
+
+#** 22) Write a Python program to find the first n Fibonacci numbers (where n is provided by the user)
+
+
+# def fibo(n):
+#     fibo_nums = [0, 1]
+    
+#     for i in range(2, n):
+#         next_num = fibo_nums[i-1] + fibo_nums[i-2]
+#         fibo_nums.append(next_num)
+        
+#     return fibo_nums[:n]
+
+
+# n = int(input("Enter value for 'n': >> "))
+# fib_nums = fibo(n)
+# print(f"The first {n} Fibonacci numbers are: {fib_nums}")
+
+#** 23) Write a Python program to remove duplicates from a list.
+
+
+# def remove_duplicates_from_list(myList):
+#     return list(set(myList))
+
+
+# myList = [1, 1, 2, 1, 3, 4 ,5, 5, "hello", "henlo", "hi", "hi", 6, 6]
+# print(f"Original list: {myList}")
+# print(f"List without duplicates: {remove_duplicates_from_list(myList)}")
+
+
+#** 24) Write a Python program to find the sum of all numbers in a given list.
+
+
+# def sum_numbers_of_list(myList):
+#     return sum(myList)
+
+
+# myList = [9, 1, 2, 8, 1.5]
+# print(f"The sum of all numbers in the list is: {sum_numbers_of_list(myList)}")
+
+#** 25) Write a Python program to find the common characters between two strings.
+
+
+# def find_common_chars(str1, str2):
+#     return set(str1).intersection(set(str2))
+
+
+# str1 = "hello"
+# str2 = "heio"
+# common_chars = find_common_chars(str1, str2)
+# print(f"Common characters between '{str1}' and '{str2}': {common_chars}")
+
+#** 26) 
