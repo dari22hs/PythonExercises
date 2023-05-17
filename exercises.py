@@ -385,4 +385,17 @@ Here are some simple exercises to practice with Python.
 # common_chars = find_common_chars(str1, str2)
 # print(f"Common characters between '{str1}' and '{str2}': {common_chars}")
 
-#** 26) 
+#** 26) Write a Python program to check if a given list is sorted in ascending order or not.
+
+
+def is_ascending(myList):
+    if myList == sorted(myList):
+        return "The list is in ascending order."
+    else:
+        return "The list is not in ascending order."
+
+
+lst1 = [1, 2, 3, 4, 5]
+lst2 = [2, 5, 3, 1, 4]
+print(f"{lst1}. {is_ascending(lst1)}")
+print(f"{lst2}. {is_ascending(lst2)}")
