@@ -1,5 +1,14 @@
 """
-Collection of simple Python exercises using list comprehension
+Collection of simple Python exercises using list comprehension.
+Syntax for list comprehension:
+
+#!? new_list = [expression for item in iterable if condition]
+
+#* new_list ---> is the new list that will be created based on the comprehension.
+#* expression -> is the expression or transformation that will be applied to each item in the iterable.
+#* item -------> is the variable that represents each element in the iterable.
+#* iterable ---> is the sequence or collection of elements that will be iterated over.
+#* if ---------> condition (optional) is an optional condition that filters the elements based on a given condition
 """
 #** 1) Square every number in a list.
 # numbers = [1, 2, 3, 4, 5, 6]
@@ -100,6 +109,32 @@ Collection of simple Python exercises using list comprehension
 # print(reversed_string)
 
 #** 17) Extract numbers from strings
-myStrings = ['I have $0 dollars', 'Where is room #485616', 'I will go for 15 reps', 'I have 2 dogs']
-numbers = [int(''.join(filter(str.isdigit, string))) for string in myStrings]
-print(numbers)
+# myStrings = ['I have $0 dollars', 'Where is room #485616', 'I will go for 15 reps', 'I have 2 dogs']
+# numbers = [int(''.join(filter(str.isdigit, string))) for string in myStrings]
+# print(numbers)
+
+#** 18) Positive numbers
+# numbers = [-1, 2, 3, 4, 5, -18, 89, -69]
+# positive_numbers = [n for n in numbers if n > 0]
+# print(positive_numbers)
+
+#** 19) String lengths
+# myStrings = ["henlo", "cute", "red", "panda"]
+# str_lengths = [len(s) for s in myStrings]
+# print(str_lengths)
+
+#** 20) Count vowels in each string
+# vowels = ["a", "e", "i", "o", "u"]
+# myStrings = ["watermelon", "grandpa", "corn", "dog"]
+# vowel_count = [sum(1 for char in s if char.lower() in vowels) for s in myStrings]
+# print(vowel_count)
+
+#** 21) Multiply by 2 if the number is divisible by 3 and sum those numbers
+# numbers = [10, 20, 30, 40, 50, 60]
+# result = sum(2 * num for num in numbers if num % 3 == 0)
+# print(result)
+
+#** 22) Remove duplicates
+original_list = [10, 20, 30, 20, 40, 10, 50, 30]
+result_list = [x for i, x in enumerate(original_list) if x not in original_list[:i]]
+print(result_list)
