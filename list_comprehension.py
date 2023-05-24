@@ -1,5 +1,5 @@
 """
-Collection of simple Python exercises about list comprehension
+Collection of simple Python exercises using list comprehension
 """
 #** 1) Square every number in a list.
 # numbers = [1, 2, 3, 4, 5, 6]
@@ -70,5 +70,36 @@ Collection of simple Python exercises about list comprehension
 
 #** 12) Generate list of multiples
 # n = 5
-# multiples = [i * n for i in range(1, 51)] # Remember: range(start(inclusive), stop(exclusive), step)
+# multiples = [i * n for i in range(1, 51)] 
+# # Remember:
+# # range(stop): Generates numbers from 0 up to (BUT NOT INCLUDING) the stop value.
+# # range(start, stop): Generates numbers from start up to (BUT NOT INCLUDING) the stop value.
+# # range(start, stop, step): Generates numbers from start up to (BUT NOT INCLUDING) the stop value, incrementing by step.
+# ? range(start(INCLUSIVE), stop(EXCLUSIVE), step(OPTIONAL))
 # print(multiples)
+
+#** 13) Extract even-length words
+# sentence = "Extract even-length words from this sentence"
+# words = sentence.split()
+# even_length_words = [word for word in words if len(word) % 2 == 0]
+# print(even_length_words)
+
+#** 14) Capitalize first letter
+# names = ['polly', 'brandy', 'angie', 'lola']
+# capitalized_names = [name.capitalize() for name in names]
+# print(capitalized_names)
+
+#** 15) Duplicate each element
+# numbers = [1, 2, 3, 4, 5]
+# duplicated_numbers = [num for num in numbers for x in range(2)]
+# print(duplicated_numbers)
+
+#** 16) Reverse strings
+# myStrings = ['good', 'blue', 'sky', 'sunshine', 'sun', 'day']
+# reversed_string = [string[::-1] for string in myStrings]
+# print(reversed_string)
+
+#** 17) Extract numbers from strings
+myStrings = ['I have $0 dollars', 'Where is room #485616', 'I will go for 15 reps', 'I have 2 dogs']
+numbers = [int(''.join(filter(str.isdigit, string))) for string in myStrings]
+print(numbers)
