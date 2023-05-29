@@ -31,9 +31,33 @@ enumerate(sequence)
 # for index, fruit in enumerate(fruits, start=1):
 #     print(f"Index: {index} -> Fruit: {fruit}")
 
-#** 5)  Enumerate with condition
-numbers = [10, 15, 20, 25, 30, 35, 40, 45, 50]
-for index, num in enumerate(numbers):
-    if num % 10 == 0:
-        print(f"Number {num} is at index {index} and is divisible by 10.")
+#** 5) Enumerate with condition
+# numbers = [10, 15, 20, 25, 30, 35, 40, 45, 50]
+# for index, num in enumerate(numbers):
+#     if num % 10 == 0:
+#         print(f"Number {num} is at index {index} and is divisible by 10.")
 
+#** 6) Enumerate with step
+# numbers = [10, 15, 20, 25, 30, 35, 40, 45, 50]
+
+# for index, num in enumerate(numbers[::2]):
+#     print(f"Index: {index} -> Number: {num}")
+
+#** 7) Enumerate and update list elements
+# grades = [61, 80, 97, 99.9, 75, 89, 74.9, 79, 80.1]
+
+# for index, grade in enumerate(grades):
+#     if 75 <= grade < 80:
+#         grades[index] = 80
+        
+# print(grades)
+
+#** 8) Count odd numbers
+numbers = [1, 2, 3, 4, 5]
+count = 0
+
+for index, num in enumerate(numbers):
+    if num % 2 != 0:
+        count += 1
+
+print(f"Amount of odd numbers: {count}")

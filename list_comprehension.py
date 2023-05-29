@@ -135,6 +135,11 @@ Syntax for list comprehension:
 # print(result)
 
 #** 22) Remove duplicates
-original_list = [10, 20, 30, 20, 40, 10, 50, 30]
-result_list = [x for i, x in enumerate(original_list) if x not in original_list[:i]]
-print(result_list)
+# original_list = [10, 20, 30, 20, 40, 10, 50, 30]
+# result_list = [x for i, x in enumerate(original_list) if x not in original_list[:i]]
+# print(result_list)
+
+#** 23) Convert °C to °F
+c_temperatures = [0, 10, 20, 30, 40, 50]
+f_temperatures = [(temp * 9/5) + 32 for temp in c_temperatures]
+print(f_temperatures)
