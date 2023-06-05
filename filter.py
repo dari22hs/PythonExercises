@@ -28,3 +28,9 @@ Syntax:
 # print(positive_numbers)
 
 #** 3) Strings longer than 5 characters
+# def is_long_string(s):
+#     return len(s) > 5
+
+# words = ["hello", "run", "good", "old", "dog", "watermelon", "chronical"]
+# long_words = list(filter(is_long_string, words))
+# print(long_words)
