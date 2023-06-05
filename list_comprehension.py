@@ -2,13 +2,13 @@
 Collection of simple Python exercises using list comprehension.
 Syntax for list comprehension:
 
-#!? new_list = [expression for item in iterable if condition]
+#? -> new_list = [expression for item in iterable if condition]
 
-#* new_list ---> is the new list that will be created based on the comprehension.
-#* expression -> is the expression or transformation that will be applied to each item in the iterable.
-#* item -------> is the variable that represents each element in the iterable.
-#* iterable ---> is the sequence or collection of elements that will be iterated over.
-#* if ---------> condition (optional) is an optional condition that filters the elements based on a given condition
+## new_list ---> is the new list that will be created based on the comprehension.
+## expression -> is the expression or transformation that will be applied to each item in the iterable.
+## item -------> is the variable that represents each element in the iterable.
+## iterable ---> is the sequence or collection of elements that will be iterated over.
+## if ---------> condition (optional) is an optional condition that filters the elements based on a given condition
 """
 #** 1) Square every number in a list.
 # numbers = [1, 2, 3, 4, 5, 6]
@@ -140,6 +140,11 @@ Syntax for list comprehension:
 # print(result_list)
 
 #** 23) Convert °C to °F
-c_temperatures = [0, 10, 20, 30, 40, 50]
-f_temperatures = [(temp * 9/5) + 32 for temp in c_temperatures]
-print(f_temperatures)
+# c_temperatures = [0, 10, 20, 30, 40, 50]
+# f_temperatures = [(temp * 9/5) + 32 for temp in c_temperatures]
+# print(f_temperatures)
+
+#** 24) Extract uppercase letters
+# sentence = "Welcome To The Machine"
+# uppercase_letters = [char for char in sentence if char.isupper()]
+# print(uppercase_letters)

@@ -26,7 +26,7 @@ Here are some simple exercises to practice with Python.
 # number = int(input("Enter number: "))
 
 # if number > 1:
-#     for i in range(2,int(number**0.5)+1):
+#     for i in range(2, int(number**0.5)+1):
 #         if (number % i) == 0:
 #             print(f"{number} is not a prime number.")
 #             break
@@ -61,6 +61,21 @@ Here are some simple exercises to practice with Python.
 
 
 # print(f"Even numbers extracted: {get_even_numbers()}")
+
+#** 5) Write a program to print a pine tree with at least 4 rows
+
+
+# def print_pine_tree(n):
+#     if n < 4:
+#         print("Nope. Make it at least 4.")
+#     else:
+#         for i in range(n):
+#             print(" " * (n - i - 1) + "*" * (2 * i + 1))
+#         for i in range(2):
+#             print(" " * (n - 2) + "***")
+            
+            
+# print_pine_tree(4)
 
 #** 6) Write a Python function to check whether a string is a palindrome or not
 
@@ -388,14 +403,16 @@ Here are some simple exercises to practice with Python.
 #** 26) Write a Python program to check if a given list is sorted in ascending order or not.
 
 
-def is_ascending(myList):
-    if myList == sorted(myList):
-        return "The list is in ascending order."
-    else:
-        return "The list is not in ascending order."
+# def is_ascending(myList):
+#     if myList == sorted(myList):
+#         return "The list is in ascending order."
+#     else:
+#         return "The list is not in ascending order."
 
 
-lst1 = [1, 2, 3, 4, 5]
-lst2 = [2, 5, 3, 1, 4]
-print(f"{lst1}. {is_ascending(lst1)}")
-print(f"{lst2}. {is_ascending(lst2)}")
+# lst1 = [1, 2, 3, 4, 5]
+# lst2 = [2, 5, 3, 1, 4]
+# print(f"{lst1}. {is_ascending(lst1)}")
+# print(f"{lst2}. {is_ascending(lst2)}")
+
+#** 27) 
