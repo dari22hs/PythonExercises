@@ -17,6 +17,26 @@ Syntax:
 # print(squared_numbers)
 
 #** 2) Convert temperatures from °C to °F
-celsius_temps = [20, 21, 22, 23, 24, 25]
-fahrenheit_temps = list(map(lambda c: (9/5) * c +32, celsius_temps))
-print(fahrenheit_temps)
+# celsius_temps = [20, 21, 22, 23, 24, 25]
+# fahrenheit_temps = list(map(lambda c: (9/5) * c + 32, celsius_temps))
+# print(fahrenheit_temps)
+
+#** 3) Convert a list of strings to uppercase
+# strings = ["henlo", "going", "find", "searching", "sweet"]
+# uppercase_strings = list(map(str.upper, strings))
+# print(uppercase_strings)
+
+#** 4) Calculate the length of each word in a sentence
+# sentence = "I'm going to learn Python"
+# word_lengths = list(map(len, sentence.split()))
+# print(word_lengths)
+
+#** 5) Double each number in a list
+# numbers = [1, 2, 3, 4, 5]
+# doubled_numbers = list(map(lambda x: x ** 2, numbers))
+# print(doubled_numbers)
+
+#** 6) Extract the first character in each string in a list
+names = ['Michael', 'Irma', 'Karen', 'Enzo']
+first_chars = list(map(lambda name: name[0], names))
+print(first_chars)
