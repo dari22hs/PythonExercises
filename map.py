@@ -33,10 +33,10 @@ Syntax:
 
 #** 5) Double each number in a list
 # numbers = [1, 2, 3, 4, 5]
-# doubled_numbers = list(map(lambda x: x ** 2, numbers))
+# doubled_numbers = list(map(lambda x: x * 2, numbers))
 # print(doubled_numbers)
 
 #** 6) Extract the first character in each string in a list
-names = ['Michael', 'Irma', 'Karen', 'Enzo']
-first_chars = list(map(lambda name: name[0], names))
-print(first_chars)
+# names = ['Michael', 'Irma', 'Karen', 'Enzo']
+# first_chars = list(map(lambda name: name[0], names))
+# print(first_chars)
