@@ -412,4 +412,46 @@ Here are some simple exercises to practice with Python.
 # print(f"{lst1}. {is_ascending(lst1)}")
 # print(f"{lst2}. {is_ascending(lst2)}")
 
-#** 27) 
+#** 27) What will be the output?
+# def check_conditions(data):
+#     if all(data):
+#         return "yes"
+#     elif not any(data):
+#         return "no"
+#     else:
+#         return "I don't know"
+    
+
+# values = [True, False, True, False]
+
+# A) "yes"
+# B) "no"
+# C) "I don't know"
+# D) Error
+# print(check_conditions(values))
+
+#** 28) True or False? And which type of object is x?
+# x = 7, 8, 9
+# print(type(x))
+# print(sorted(x) == x)
+
+#** 29) What will be the output and why?
+# def show_family(age):
+#     family = {
+#         'Dad': range(40, 100),
+#         'Mom': range(50),
+#         'Child': range(0, 18)
+#     }
+    
+#     for member, age_range in family.items():
+#         if age in age_range:
+#             return member
+    
+#     return "Unknown"
+
+
+# print(show_family(45))
+# A) Mom
+# B) Dad
+# C) Child
+# D) Unknown
