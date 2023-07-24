@@ -455,3 +455,24 @@ Here are some simple exercises to practice with Python.
 # B) Dad
 # C) Child
 # D) Unknown
+
+#** 30) What will be the output?
+# def my_function():
+#     Ellipsis
+
+
+# print(my_function())
+# A) SyntaxError
+# B) None
+# C) Ellipsis
+# D) None of the above
+
+#** 31) What will be the output?
+# myTuple = (1, 2, 3, 4, 5)
+# x, y, *rest = myTuple
+# print(x, y, rest)
+# A) 1 2 [3, 4, 5]
+# B) 1 2 (3, 4, 5)
+# C) 1 2 [3]
+# D) 1 2 (3)
+
