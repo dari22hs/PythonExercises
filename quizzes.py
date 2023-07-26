@@ -1,5 +1,5 @@
 """
-
+Collection of quizzes taken from the Internet
 """
 #* 1) What is the output?
 ## A) SyntaxError
@@ -7,16 +7,16 @@
 ##    None
 ## C) bark bark!
 ## D) None of the above
-# class dog: 
-#     ...
+class dog: 
+    ...
 
 
-# @(lambda f:setattr(dog, "on_leash", f))
-# def walk():
-#     print("bark bark!")
+@(lambda f:setattr(dog, "on_leash", f))
+def walk():
+    print("bark bark!")
 
 
-# print(dog.on_leash())
+print(dog.on_leash())
 
 #* 2) What is the output?
 ## A) [1, 2, 3]
@@ -27,3 +27,5 @@
 # y = x
 # y[0] = 100
 # print(x)
+
+#* 3) What is the output?
