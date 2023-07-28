@@ -7,16 +7,16 @@ Collection of quizzes taken from the Internet
 ##    None
 ## C) bark bark!
 ## D) None of the above
-class dog: 
-    ...
+# class dog: 
+#     ...
 
 
-@(lambda f:setattr(dog, "on_leash", f))
-def walk():
-    print("bark bark!")
+# @(lambda f:setattr(dog, "on_leash", f))
+# def walk():
+#     print("bark bark!")
 
 
-print(dog.on_leash())
+# print(dog.on_leash())
 
 #* 2) What is the output?
 ## A) [1, 2, 3]
@@ -29,3 +29,40 @@ print(dog.on_leash())
 # print(x)
 
 #* 3) What is the output?
+## A) Py.py = 7 Cy.py = 3.14 Vy.py = 7
+## B) Py.py = 7 Cy.py = 1 Vy.py = 3.14
+## C) None of the above
+## D) Py.py = 3.14 Cy.py = 7 Vy.py = 1
+# class Py:
+#     py = 1
+    
+    
+# class Cy(Py):
+#     ...
+
+
+# class Vy(Py):
+#     ...
+
+
+# Cy.py = 3.14
+# Py.py = 7
+# print(f"{Py.py = } {Cy.py = } {Vy.py = }")
+
+#* 4) What is the output?
+## A) True 
+## B) False
+## C) None
+## D) "Lion"
+# def func():
+#     a, *b, c = ["Cat", "Dog", "Tiger", "Lion"]
+#     item = b
+#     return "Lion" in [item] or None
+
+
+# print(func())
+
+#* 5) What is the output?
+my_string = "Python"
+result = my_string[::2] + my_string[1::2]
+print(result)
