@@ -63,6 +63,31 @@ Collection of quizzes taken from the Internet
 # print(func())
 
 #* 5) What is the output?
-my_string = "Python"
-result = my_string[::2] + my_string[1::2]
-print(result)
+# my_string = "Python"
+# result = my_string[::2] + my_string[1::2]
+# print(result)
+
+#* 6) What is the output?
+## A) True
+## B) Empty
+## C) Not Empty
+## D) False
+# a = [""]
+# b = 2
+# c = ""
+# print("Empty" if c is a or c == a else not "Not Empty")
+
+#* 7) What is the output?
+## A) SyntaxError
+## B) True
+## C) False
+## D) None
+# print(False == False in [False])
+
+#* 8) What is the output?
+## A) [] ['']
+## B) [''] ['']
+## C) [] []
+## D) [''] []
+# s = '\n'
+# print(s.split(), s.splitlines())
